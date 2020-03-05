@@ -4,8 +4,7 @@ import { PokemonComponent } from './pokemon.component';
 import {PokemonFormComponent} from './pokemon-form/pokemon-form.component';
 import {PokemonListComponent} from './pokemon-list/pokemon-list.component';
 import {PokemonRouting} from './pokemon.routing';
-
-
+import {SharedModule} from '../../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -15,6 +14,7 @@ import {PokemonRouting} from './pokemon.routing';
   ],
   imports: [
     CommonModule,
+    SharedModule,
     PokemonRouting
   ]
 })

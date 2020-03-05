@@ -2,6 +2,8 @@ import {Pokemon} from '../../interfaces/pokemon.interface';
 
 export class AddPokemon {
   static readonly type = '[Pokemon] add';
+
+  constructor(public pokemon: Pokemon) {}
 }
 
 export class AddSuccessPokemon {
@@ -34,6 +36,8 @@ export class LoadFailedPokemon {
 
 export class UpdatePokemon {
   static readonly type = '[Pokemon] update';
+
+  constructor(public pokemon: Pokemon) {}
 }
 
 export class UpdateSuccessPokemon {
@@ -50,6 +54,8 @@ export class UpdateFailedPokemon {
 
 export class DeletePokemon {
   static readonly type = '[Pokemon] delete';
+
+  constructor(public id: number) {}
 }
 
 export class DeleteSuccessPokemon {
