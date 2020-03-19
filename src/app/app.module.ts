@@ -12,6 +12,7 @@ import {NgxsLoggerPluginModule} from '@ngxs/logger-plugin';
 import {NgxsDispatchPluginModule} from '@ngxs-labs/dispatch-decorator';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {CoreModule} from './core.module';
+import {FlexModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {CoreModule} from './core.module';
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService),
     CoreModule,
     AppRoutingModule,
+    FlexModule,
     BrowserAnimationsModule
   ],
   providers: [],

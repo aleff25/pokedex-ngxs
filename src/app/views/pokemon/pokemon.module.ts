@@ -13,7 +13,6 @@ import {SharedModule} from '../../shared/shared.module';
     PokemonListComponent
   ],
   imports: [
-    CommonModule,
     SharedModule,
     PokemonRouting
   ]
